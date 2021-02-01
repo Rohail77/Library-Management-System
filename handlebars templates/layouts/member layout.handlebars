@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="member styles/member styles.css">
+  <link rel="stylesheet" href="member styles/member home.css">
+  <title>{{title}}</title>
+</head>
+<body>
+  <header>
+    <h1>Islamabad Random Library</h1>
+    <nav>
+      <div class="user-info">
+        <img src="" alt="profile image">
+        <p>{{username}}</p>
+        <a href="#"> <img src="" alt="bell icon"> </a>
+      </div>
+      <ul class="nav-list">
+        <li href="#"><a href="/home">Home</a></li>
+        <li href="#"><a href="#">Settings</a></li>
+        <li href="#"><a href="/logout">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="wrapper">
+    <div class="main main_member-lms">
+      <aside class="sidebar">
+        <ul class="sidebar-list">
+          <li> <a href="/books_borrowed">My Borrowings</a> </li>
+          <li> <a href="books_held" id="books-held">Books on hold</a> </li>
+          <li> <a href="/books_overdue">Books Overdue</a> </li>
+        </ul>
+      </aside>
+
+      <div class="main-content">
+        {{{body}}}
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <p>Contact Us</p>
+    <p>Phone: 051-2984457</p>
+    <p>Email: library.random@gmail.com</p>
+    <p>Address: G-11 street 5-A</p>
+  </footer>
+    <script type="module" src={{script}}></script>
+</body>
+</html>

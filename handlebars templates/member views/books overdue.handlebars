@@ -1,0 +1,17 @@
+<ul class="book-list" id="overdue-book-list">
+  {{#each books}}
+  <li class="book-details">
+    <img src="" alt="book cover">
+    <div class="info_book-borrowed">
+      <p><span>{{this.title}} </span><span>Edition {{this.edition}}</span></p>
+      <p>Issue Time: {{this.issue_date}}</p>
+      <p>Due Time: {{this.due_date}}</p>
+      <p>Overdue by: {{this.overdue_by_days}} days</p>
+    </div>
+  </li>
+  {{/each}}
+</ul>
+<!-- Alternative -->
+<!-- <div class="empty-list-msg"> 
+  <h1 class="h_empty-list">Nothing Here! That's nice</h1>
+</div> -->

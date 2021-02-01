@@ -1,0 +1,17 @@
+<ul class="book-list" id="borrowed-book-list">
+  {{#each books}}
+  <li class="book-details">
+    <img src="" alt="book cover">
+    <div class="info_book-borrowed">
+      <p><span>{{this.title}} </span><span>Edition {{this.edition}}</span></p>
+      <p>Issue Date: {{this.issue_date}}</p>
+      <p>Due Date: {{this.due_date}}</p>
+    </div>
+  </li>
+  {{/each}}
+  <!-- Alternative -->
+  <!-- <div class="empty-list-msg">
+    <h1 class="h_empty-list">No Borrowings!</h1>
+    <p>You have no borrowings from the library. Visit our library to get one. You can also place a hold on a book.</p>
+  </div> -->
+</ul>

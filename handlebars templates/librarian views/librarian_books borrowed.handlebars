@@ -1,0 +1,25 @@
+<div class="search-borrowed search-books">
+  <h1 class="h_action">Search Borrowed Books</h1>
+  <a href="#" class="search-btn">Search</a>
+  <input type="text" placeholder="Enter book title">
+</div>
+<table class="checkedout-books-table">
+  <tr class="cb-table-row">
+    <th>Title</th>
+    <th>Issue Date</th>
+    <th>Due Date</th>
+    <th>Member Name</th>
+    <th>Email</th>
+    <th>Phone</th>
+  </tr>
+  {{#each result}}
+    <tr class="cb-table-row">
+      <td id="title">{{this.title}}</td>
+      <td id="issue-date">{{this.issue_date}}</td>
+      <td id="due-date">{{this.due_date}}</td>
+      <td id="member-name">{{this.member_name}}</td>
+      <td id="email">{{this.email}}</td>
+      <td id="phone">{{this.phone_number}}</td>
+    </tr>
+  {{/each}}
+</table>

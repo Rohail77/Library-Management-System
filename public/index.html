@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    <title>Random Library</title>
+  </head>
+  <body>
+    <header>
+      <h1>Islamabad Random Library</h1>
+      <nav>
+        <a href="/signup" class="signup-btn">Sign Up</a>
+        <a href="#" class="login-btn">Login</a>
+      </nav>
+    </header>
+    <div class="wrapper">
+      <div class="main">
+        <div class="lib-timings">
+          <h2>Library Timings</h2>
+          <div><p>Monday to Thursday</p><p>11AM to 11PM</p></div>
+          <div><p>Friday</p><p>3PM to 9PM</p></div>
+          <div><p>Saturday and Sunday</p><p>12PM to 9PM</p></div>
+        </div>
+        <div class="main-content">
+          <h1>Welcome to Random Library</h1>
+          <p>We have 12997 books available for you to read. These books belong to categories  including educational, scientific, non-fiction, biographies, fiction and many more.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="login-form-div">
+      <form id="login-form" action="/login" method="POST">
+        <div class="exit-login-form">+</div>
+        <div>
+          <label for="username-login">Username:</label>
+          <input type="text" name="username" id="username-login">
+        </div>
+        <div>
+          <label for="pass-login">Password:</label>
+          <input type="password" name="password" id="pass-login">
+        </div>
+        <input type="submit" value="Login" id="login-btn">
+      </form>
+    </div>
+
+    <footer>
+      <p>Contact Us</p>
+      <p>Phone: 051-2984457</p>
+      <p>Email: library.random@gmail.com</p>
+      <p>Address: G-11 street 5-A</p>
+    </footer>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

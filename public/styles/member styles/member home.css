@@ -1,0 +1,18 @@
+:root {
+  --meroon: #325D79;
+}
+
+/* MAIN CONTENT */
+.main-content {
+  padding-left: 8em;
+}
+
+/*  Stylings for the "search-books form" in member's home page. */
+
+.form_search-books {
+  margin-bottom:3em;
+}
+
+#search-books {
+  margin-top: 1em;
+}

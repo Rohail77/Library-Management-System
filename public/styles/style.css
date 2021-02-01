@@ -1,0 +1,145 @@
+/************************************
+    BASE STYLING FOR ALL APPLICATION
+*************************************/
+
+*,*::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* font-family: 'Alegreya', serif; */
+
+h1, h2 {
+  font-family: 'Alegreya', serif;
+}
+h1 {
+  line-height: 3rem;
+}
+
+:root {
+  --meroon: #325D79;
+  --white: #efeeee;
+  --white-shade: #d3d3d3;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  min-height: 100vh;
+  background-color: var(--white);
+  position: relative;
+}
+
+table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  background-color: var(--white-shade);
+}
+
+th {
+  background-color: var(--meroon);
+  color: var(--white);
+}
+
+th, td {
+  padding: 0.4em 0.4em;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+header {
+  background-color: var(--meroon);
+  padding: 1.5em 3em 1.5em 1.5em;
+  color: white;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 2.4rem;
+}
+
+.sidebar {
+  padding: 3em 1em 2em 24px;
+  background-color: var(--white-shade);
+  height: 100%;
+}
+
+.sidebar-list li+li {
+  margin-top: 1em;
+}
+
+.sidebar a{
+  color: var(--meroon);
+  text-decoration: underline;
+  font-size: 1.2rem;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  /* align-content: center; */
+  align-items: baseline;
+  min-height: 75vh;
+}
+
+input[type=text], input[type=email], input[type=password], input[type=number], 
+input[type=date], select {
+  height: 30px;
+  border-radius: 0.9em;
+  width: 100%;
+  padding: 0 1em;
+  font-size: 0.9rem;
+  max-width: 450px;
+}
+
+input[type=submit] {
+  background-color: var(--meroon);
+  padding: 0.5em 1em;
+  border-radius: 0.4em;
+  max-width: max-content;
+  color: var(--white);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.h_action {
+  font-size: 2.5rem;
+  margin-bottom: 0.4em;
+  color: var(--meroon);
+}
+
+.search-btn {
+  color: white;
+  padding: 0.2em 0.5em;
+  border-radius: 0.4em;
+  background-color: var(--meroon);
+  margin-right: 1em;
+}
+
+a:hover {
+  opacity: 0.9;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto 0 24px;
+}
+
+footer {
+  background-color: var(--meroon);
+  color: white;
+  line-height: 1.8em;
+  padding: 1em 0 1em 24px;
+}
+

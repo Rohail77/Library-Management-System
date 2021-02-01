@@ -1,0 +1,108 @@
+/* 
+STYLINGS FOR THE LOGIN/SIGNUP PAGE
+*/
+
+:root {
+  --meroon: #325D79;
+  --white: #efeeee;
+  --white-shade: #d3d3d3;
+}
+
+nav a {
+  margin: 0.8em;
+  padding: 0.5em 1.2em;
+  background-color: var(--white-shade);
+  border-radius: 1.2em;
+  color: #1a4058;
+}
+
+.lib-timings {
+  background-color:var(--meroon);
+  text-align: center;
+  padding-bottom: 1em;
+  color: white;
+  letter-spacing: 0.5px;
+  border-radius: 0.3em;
+  box-shadow: 1px -1px 10px 0px #325D79;
+}
+
+.lib-timings h2 {
+  background-color: var(--white-shade);
+  padding: 0.5em;
+  color: var(--meroon);
+  font-size: 1.8rem;
+}
+
+.lib-timings div {
+  margin: 0.9em 0;
+}
+
+.lib-timings div p + p {
+  margin-top: 0.4em;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 250px auto;
+  align-content: center;
+  align-items: baseline;
+  min-height: 75vh;
+}
+
+.main-content {
+  max-width: 550px;
+  justify-self: center;
+  margin-left: 4em;
+  line-height: 1.7em;
+}
+
+.main-content h1 {
+  margin-bottom: 0.5em;
+  font-size: 3rem;
+  color: var(--meroon);
+}
+
+/****************************
+    SIGN UP FORM, LOGIN FORM 
+*****************************/
+
+#signup-form, #login-form {
+  display: grid;
+  grid-gap: 1.2em;
+  max-width: 300px;
+  font-size: 1.1rem;
+  background-color: var(--white);
+  color: black;
+  padding: 1.2em;
+  border-radius: 0.4em;
+} 
+
+.exit-login-form {
+  display: grid;
+  color: var(--white);
+  align-items: center;
+  justify-items: center;
+  width: 25px;
+  height: 25px;
+  background-color: var(--meroon);
+  cursor: pointer;
+  align-self: baseline;
+}
+
+#signup-form div, #login-form div {
+  display: grid;
+  grid-gap: 0.5em;
+}
+
+.login-form-div {
+  display: none;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  justify-items: center;
+  background-color: rgba(0, 0, 0, 0.856);
+  color: var(--white);
+}

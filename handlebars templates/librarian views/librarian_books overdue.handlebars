@@ -1,0 +1,28 @@
+<!-- *** Books Overdue ***-->
+<div class="search-overdue search-books">
+  <h1 class="h_action">Search Overdue Books</h1>
+  <a href="#" class="search-btn">Search</a>
+  <input type="text" placeholder="Enter book title">
+</div>
+<table class="overdue-books-table">
+  <tr class="ob-table-row">
+    <th>Title</th>
+    <th>Issue Date</th>
+    <th>Due Date</th>
+    <th>Overdue By Days</th>
+    <th>Member Name</th>
+    <th>Email</th>
+    <th>Phone</th>
+  </tr>
+  {{#each result}}
+  <tr class="ob-table-row">
+    <td id="title">{{this.title}}</td>
+    <td id="issue_date">{{this.issue_date}}</td>
+    <td id="due_date">{{this.due_date}}</td>
+    <td id="overdue_by_days">{{this.overdue_by_days}}</td>
+    <td id="member_name">{{this.member_name}}</td>
+    <td id="email">{{this.email}}</td>
+    <td id="phone">{{this.phone_number}}</td>
+  </tr>
+  {{/each}}
+</table>  

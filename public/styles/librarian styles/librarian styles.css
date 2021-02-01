@@ -1,0 +1,103 @@
+:root {
+  --meroon: #325D79;
+  --white: #efeeee;
+  --white-shade: #d3d3d3;
+}
+
+.nav-links {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 2em;
+}
+
+.wrapper {
+  margin: 0 auto 0 0;
+}
+
+/*******************
+    SIDEBAR
+*******************/
+
+.sidebar_label {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  margin-bottom: 0.8em;
+  color: #1c4a69;
+}
+
+.book-label {
+  margin-top: 1.5em;
+}
+
+.sidebar-list-librarian li a{
+  font-size: 1.1rem;
+}
+
+.sidebar-list-librarian li + li{
+  margin-top: 0.5em;
+}
+
+.sidebar_label img {
+  margin-right: 0.8em;
+}
+
+/*******************
+    MAIN CONTENT
+*******************/
+
+.main-content {
+  padding-left: 8em;
+}
+
+/*******************
+  DISCOVER MEMBERS
+*******************/
+
+#member-name {
+  margin-top: 1em;
+}
+
+.member {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 150px 1fr;
+  grid-gap: 1em;
+  margin: 1em 1em;
+  line-height: 1.7rem;
+  font-size: 1rem;
+  background-color: var(--white-shade);
+  padding: 1em;
+  max-width: 450px;
+}
+
+/*******************
+    ADD MEMBER
+*******************/
+
+.form_lib-task {
+  display: grid;
+  grid-gap: 1.2em;
+  max-width: 448px;
+  font-size: 1.1rem;
+  margin-bottom: 3em;
+} 
+
+.form_lib-task div {
+  display: grid;
+  grid-gap: 0.5em;
+}
+
+.btn_lib-task {
+  justify-self: end;
+}
+
+.form_add-book {
+  grid-gap: 0.4em;
+}
+
+.search-books {
+  margin-bottom: 3em;
+}
+
+

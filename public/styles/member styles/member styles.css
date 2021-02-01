@@ -1,0 +1,96 @@
+
+/* font-family: 'Alegreya', serif; */
+
+:root {
+  --meroon: #325D79;
+  --white: #efeeee;
+  --white-shade: #d3d3d3;
+  --green: #009c41;
+  --red: #c52a2a;
+}
+
+nav, .user-info, .nav-list {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 1em;
+  color: var(--white-shade);
+}
+
+.wrapper {
+  margin: 0 auto 0 0;
+}
+
+/* MAIN CONTENT */
+.main-content {
+  padding-left: 8em;
+}
+
+/* List of books(borrowed, held, overdue) */
+
+.book-list {
+  margin-bottom: 2em;
+}
+
+/* Details of book (borrowed, held, overdue) */
+
+.book-details {  
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 120px 1fr;
+  background-color: var(--white-shade);
+  padding: 1em;
+  margin: 1em 0 0 0;
+  max-width: 450px;
+  line-height: 1.5rem;
+}
+
+/* styles for removing a held book and 
+checking status whether book is available or not.*/
+
+.actions_book {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 1.5em;
+  align-items: center;
+  justify-content: start;
+  margin-top: 1em;
+}
+
+.actions_book a {
+  color: var(--white);
+  background-color: var(--meroon);
+  padding: 0.1em 0.6em;
+  border-radius: 1em;
+  font-size: 1rem;
+} 
+
+.available {
+  display: flex;
+  align-items: center;
+}
+
+.available::after {
+  content: '';
+  background-color: var(--red);
+  height: 18px;
+  width: 18px;
+  display: block;
+  border-radius: 10px;
+  margin-left: 0.5em;
+}
+
+/* Message to  display if no results(books borrowed, held, overdue) to display*/
+
+.empty-list-msg {
+  max-width: 600px;
+  margin-left: 8em;
+}
+
+.h_empty-list {
+  margin-bottom: 0.5em;
+  font-size: 3rem;
+  color: var(--meroon); 
+}
+
+
+

@@ -1,0 +1,16 @@
+<ul class="book-list" id="held-book-list">
+  {{#each books}}
+  <li class="book-details">
+    <img src="" alt="book cover">
+    <div class="info_books-held">
+      <p><span>{{this.title}}</span><span> Edition {{this.edition}}</span></p>
+      <p>Hold Date: {{this.hold_date}}</p>
+      <div class="actions_book">
+        <p class="available">Available</p><a href="#" isbn = {{this.isbn}} class="remove-held-book">Remove</a>
+      </div>
+    </div>
+  </li>
+  {{/each}}
+</ul>
+<!-- Alternative -->
+<!-- <div class="empty-list-msg"> <h1 class="h_empty-list">No Books on Hold!</h1> </div> -->

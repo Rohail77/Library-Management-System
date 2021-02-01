@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="librarian styles/librarian styles.css">
+  <title>{{title}}</title>
+</head>
+<body>
+  <header>
+    <h1>Islamabad Random Library</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="/librarian_home">Home</a></li>
+        <li><a href="/librarian_settings">Settings</a></li>
+        <li><a href="/logout">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="wrapper">
+    <div class="main">
+      <aside class="sidebar">
+        <div class="sidebar_members">
+          <div class="sidebar_label"><h2>Members</h2><img src="" alt="p">  </div>
+          <ul class="sidebar-list sidebar-list-librarian">
+            <li><a href="/librarian_home">Discover Members</a></li>
+            <li><a href="/add_member">Add Member</a></li>
+            <li><a href="/remove_member">Remove Member</a></li>
+          </ul>
+        </div>
+        <div class="sidebar_books">
+          <div class="sidebar_label book-label"><h2>Books</h2><img src="" alt="b"> </div>
+          <ul class="sidebar-list sidebar-list-librarian">
+            <li><a href="#">Discover Books</a></li>
+            <li><a href="/add_book">Add Book</a></li>
+            <li><a href="/edit_book">Edit Record</a></li>
+            <li><a href="/remove_book">Remove Record</a></li>
+            <li><a href="/issue_book">Issue Book</a></li>
+            <li><a href="/book_returned">On Book Return</a></li>
+            <li><a href="/librarian_books_borrowed">Books Borrowed</a></li>
+            <li><a href="/librarian_books_overdue">Books Overdue</a></li>
+            <li><a href="/librarian_books_held">Books on hold</a></li>
+          </ul>
+        </div>
+      </aside>
+      <div class="main-content">
+        {{{body}}} 
+      </div>
+
+    </div>
+  </div>
+  <footer>
+    <p>Contact Us</p>
+    <p>Phone: 051-2984457</p>
+    <p>Email: library.random@gmail.com</p>
+    <p>Address: G-11 street 5-A</p>
+  </footer>
+  <script type="module" src={{script}}></script>
+</body>
+</html>

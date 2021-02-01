@@ -1,0 +1,25 @@
+<div class="search-held search-books">
+  <h1 class="h_action">Search held Books</h1>
+  <a href="#" class="search-btn">Search</a>
+  <input type="text" placeholder="Enter book title">
+</div>
+<table class="books-held-table">
+  <tr>
+    <th>Book title</th>
+    <th>Member name</th>
+    <th>Email</h>
+    <th>Phone</th>
+    <th>Hold date</th>
+    <th>Hold time</th>
+  </tr>
+  {{#each result}}
+    <tr>
+      <td class="book-title">{{this.title}}</td>
+      <td class="member-name">{{this.member_name}}</td>
+      <td class="email">{{this.email}}</td>
+      <td class="phone">{{this.phone_number}}</td>
+      <td class="hold-date">{{this.hold_date}}</td>
+      <td class="hold-time">{{this.hold_date}}</td>
+    </tr>
+  {{/each}}
+</table>                  
